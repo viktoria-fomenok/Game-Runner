@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by vikyf on 4/4/2017.
  */
 
@@ -12,34 +12,40 @@ var height = game.getWH().h;
 var width = game.getWH().w;
 
 var fon1 = game.newImageObject({
-    x : 0, y : 0,
-    file : 'img/fon.jpg',
-    h : height,
-    onload : function () {
-        fon2.x = fon1.x+fon1.w;
-    }
+ x : 0, y : 0,
+ file : 'img/fon.jpg',
+ h : height,
+ onload : function () {
+    fon2.x = fon1.x+fon1.w;
+ }
 });
 
 var fon2 = game.newImageObject({
-    x : 0, y : 0,
-    file : 'img/fon.jpg',
-    h : height
+ x : 0, y : 0,
+ file : 'img/fon.jpg',
+ h : height
 });
 
 var gr1 = game.newImageObject({
-    x : 0, y : 0,
-    file : 'img/ground.png',
-    w : width,
-    onload : function () {
-        gr2.y = gr1.y = height - gr1.h;
-        gr2.x = gr1.x+gr1.w;
-    }
+ x : 0, y : 0,
+ file : 'img/ground.png',
+ w : width,
+ onload : function () {
+    gr2.y = gr1.y = height - gr1.h;
+    gr2.x = gr1.x+gr1.w;
+ }
 });
 
 var gr2 = game.newImageObject({
+<<<<<<< HEAD
     x : 0, y : 0,
     file : 'img/ground.png',
     w : width
+=======
+ x : 0, y : 0,
+ file : 'img/ground.png',
+ w : width
+>>>>>>> 0dec38c2c9e5e11cde3b08eb905b1f0f99b79f24
 });
 
 var dog = game.newAnimationObject({
@@ -89,4 +95,9 @@ game.newLoop('game', function () {
 
 });
 
+<<<<<<< HEAD
 game.startLoop('game');
+=======
+game.startLoop('game');
+
+>>>>>>> 0dec38c2c9e5e11cde3b08eb905b1f0f99b79f24
