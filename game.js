@@ -17,7 +17,7 @@ var height = game.getWH().h;
 
 pjs.system.setTitle('PointJS Game');
 
-<<<<<<< HEAD
+
 // создание экземпляра движка
 var pjs = new PointJS('2d', 800, 400);
 pjs.system.initFullPage();
@@ -25,8 +25,7 @@ pjs.system.initFullPage();
 var game = pjs.game;
 var point = pjs.vector.point;
 
-=======
->>>>>>> 57e013e8a940649a2d5351bbed1abb36e18ccdd0
+
 var fon1 = game.newImageObject({
     x : 0, y : 0,
     file : 'img/fon.jpg',
@@ -36,7 +35,7 @@ var fon1 = game.newImageObject({
     }
 });
 
-<<<<<<< HEAD
+
 var fon2 = game.newImageObject({
     x : 0, y : 0,
     file : 'imgs/fon.jpg',
@@ -60,8 +59,7 @@ var gr2 = game.newImageObject({
 });
 
 
-=======
->>>>>>> 57e013e8a940649a2d5351bbed1abb36e18ccdd0
+
 game.newLoopFromConstructor('myGame', function () {
 
     var myText = game.newTextObject({
@@ -74,25 +72,14 @@ game.newLoopFromConstructor('myGame', function () {
     });
 
     this.update = function () {
-<<<<<<< HEAD
         game.clear();
-=======
-
         game.clear();
-
->>>>>>> 57e013e8a940649a2d5351bbed1abb36e18ccdd0
         myText.draw();
         myText.transparent(0.005);
 
     };
 
-<<<<<<< HEAD
 });
 
 game.startLoop('myGame');
-=======
 
-});
-
-game.startLoop('myGame');
->>>>>>> 57e013e8a940649a2d5351bbed1abb36e18ccdd0
