@@ -2,7 +2,7 @@
  * Created by vikyf on 4/4/2017.
  */
 
-var pjs = new PointJS('2d', 400, 400);
+var pjs = new PointJS('2d', 600, 600);
 pjs.system.initFullPage();
 
 var game = pjs.game;
@@ -78,6 +78,12 @@ var moveBackGround = function (s) {
 };
 
 game.newLoopFromConstructor('myGame', function () {
+
+
+
+
+
+
 
 });
 
